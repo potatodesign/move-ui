@@ -1,6 +1,8 @@
+import styles from '../styles/Works.module.css'
+
 const Works = () => {
   return (
-    <div>
+    <div className={styles.container}>
       Page Works
     </div>
   );

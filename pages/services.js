@@ -1,6 +1,8 @@
+import styles from '../styles/Services.module.css'
+
 const Services = () => {
   return (
-    <div>
+    <div className={styles.container}>
       Services page
     </div>
   );
