@@ -1,3 +1,7 @@
+.navigation {
+  background-color: inherit;
+}
+
 .navigationCheckbox {
   display: none;
 }
@@ -17,11 +21,6 @@
   text-decoration: none;
 }
 
-.navigationButton:focus {
-  border-color:transparent;
-  outline:none;
-}
-
 .navigationBackground {
   height: 3rem;
   width: 3rem;
@@ -29,10 +28,7 @@
   position: fixed;
   top: 2.4rem;
   right: 2.4rem;
-  background-image: radial-gradient(
-    var(--blue),
-    var(--blue)
-  );
+  background-color: var(--blue);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 }
@@ -65,11 +61,11 @@
 }
 
 .navigationIcon::before {
-  top: -0.8rem;
+  top: -0.6rem;
 }
 
 .navigationIcon::after {
-  top: 0.8rem;
+  top: 0.6rem;
 }
 
 .navigationButton:hover .navigationIcon::before {
@@ -78,11 +74,6 @@
 
 .navigationButton:hover .navigationIcon::after {
   top: 0.8rem;
-}
-
-.navigationCheckbox:checked + .navigationButton:focus {
-  border-color:transparent;
-  outline:none;
 }
 
 .navigationCheckbox:checked + .navigationButton .navigationIcon {
