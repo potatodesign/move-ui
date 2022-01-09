@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
       <Nav />
       <Component {...pageProps} />
       <footer>
-        <p>
+        <p className="footer-desktop">
           <a href="mailto:info@movestudio.it?subject=I need infos...">
             info@movestudio.it
           </a>
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         <p>
           All rights reserved©2022
         </p>
-        <p>
+        <p className="footer-desktop">
           Designed with <span className="footer-heart">&hearts;</span> by MoveStudio
         </p>
       </footer>
