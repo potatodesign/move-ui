@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Services.module.css'
+import styles from 'styles/Services.module.css'
 
 const Services = () => {
   return (
