@@ -78,6 +78,7 @@ em, i {
 
 :root {
   --dark: rgba(0, 0, 0, 1);
+  --dark-light: rgba(0, 0, 0, 0.1);
   --white: rgb(255, 255, 255, 1);
   --grey: rgba(239, 235, 228, 1);
   --blue: rgba(49, 39, 131, 1);
@@ -90,6 +91,7 @@ footer {
   border-top: 1px solid #eaeaea;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 0.75rem;
 }
 
 footer .footer-heart {

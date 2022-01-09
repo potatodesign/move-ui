@@ -1,0 +1,132 @@
+.navigationCheckbox {
+  display: none;
+}
+
+.navigationButton {
+  background-color: var(--grey);
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 2rem var(--dark-light);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigationButton:focus {
+  border-color:transparent;
+  outline:none;
+}
+
+.navigationBackground {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2.4rem;
+  right: 2.4rem;
+  background-image: radial-gradient(
+    var(--blue),
+    var(--blue)
+  );
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.navigationCheckbox:checked ~ .navigationBackground {
+  transform: scale(80);
+}
+
+/* ICON */
+.navigationIcon {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.navigationIcon,
+.navigationIcon::before,
+.navigationIcon::after {
+  width: 2.3rem;
+  height: 2px;
+  background-color: var(--blue);
+  display: inline-block;
+}
+
+.navigationIcon::before,
+.navigationIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.navigationIcon::before {
+  top: -0.8rem;
+}
+
+.navigationIcon::after {
+  top: 0.8rem;
+}
+
+.navigationButton:hover .navigationIcon::before {
+  top: -0.8rem;
+}
+
+.navigationButton:hover .navigationIcon::after {
+  top: 0.8rem;
+}
+
+.navigationCheckbox:checked + .navigationButton:focus {
+  border-color:transparent;
+  outline:none;
+}
+
+.navigationCheckbox:checked + .navigationButton .navigationIcon {
+  background-color: transparent;
+}
+
+.navigationCheckbox:checked + .navigationButton .navigationIcon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigationCheckbox:checked + .navigationButton .navigationIcon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+/**
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; // small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+
+}
