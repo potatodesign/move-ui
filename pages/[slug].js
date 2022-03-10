@@ -8,11 +8,11 @@ const Work = () => {
   const { slug } = router.query
   return (
     <div className={styles.container}>
-    <Head>
-    <title>Move studio works {slug}</title>
-    <meta name="description" content={`Move studio work ${slug}}`} />
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
+      <Head>
+        <title>Move studio works {slug}</title>
+        <meta name="description" content={`Move studio work ${slug}}`} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       Page individual work {slug}
     </div>
   );
