@@ -10,10 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      NEXT_PUBLIC_BASE_PATH: https://potatodesign.github.io/move-ui/
+
+
 
     strategy:
-      env:
-        NEXT_PUBLIC_BASE_PATH: https://potatodesign.github.io/move-ui/
       matrix:
         node-version: [14.x]
 
