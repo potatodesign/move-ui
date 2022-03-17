@@ -2,5 +2,5 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/move-ui/' : ''
+  assetPrefix: isProd ? "/move-ui/" : "",
 }
