@@ -1,7 +1,5 @@
-const NEXT_PUBLIC_BASE_PATH = "https://potatodesign.github.io/move-ui/"
-
 module.exports = {
   reactStrictMode: true,
-  basePath: NEXT_PUBLIC_BASE_PATH,
-  assetPrefix: NEXT_PUBLIC_BASE_PATH
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH
 }

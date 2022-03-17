@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       env:
-      NEXT_PUBLIC_BASE_PATH: https://potatodesign.github.io/move-ui/
+        NEXT_PUBLIC_BASE_PATH: https://potatodesign.github.io/move-ui/
       matrix:
         node-version: [14.x]
 
