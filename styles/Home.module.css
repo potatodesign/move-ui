@@ -4,29 +4,83 @@
 
 .main {
   min-height: 80vh;
-  padding: 6rem 0 0.5rem 0;
+  padding: 90px 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  align-items: center;
 }
 
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.titleThin {
+  font-weight: 400;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.subtitle span {
+  display: inline-block;
+  width: 100%;
+}
+
+.subtitleUppercase {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 4.2rem;
+}
+
+.subtitleLowercase {
+  text-transform: lowercase;
+  text-align: right;
+  font-size: 4.2rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-top: -62px;
+  z-index: 2;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.claim {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.keyword {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts a {
+  margin: 8px 0;
+  font-weight: 400;
 }
 
 /**

@@ -12,16 +12,27 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          We are <em>Move studio</em>
+          Move<span className={styles.titleThin}>studio</span>
         </h1>
-        <p>
-          Harum animusa perspeditat ese volupta quiaeptio corum volorem porrorr orepudi cum dempore ntiam, omni re, et platem ersperspicil illuptatibus que sus.
-          Ovidi volorem pelesserum faccullam volore int ulpa pliqui officiis eosae <em>experunte et quis aut faccus</em>, invelis accumetusae pedi volupta ellantium reperi tempor alit volentio es vit que vid expero to molori arum eumenis doloruptur?
-        </p>
-        <p>
-          Perspid eosandion rae deliquia nos ilia dolo diam aut velescias dolo omniam sum fugit pe nimil explaccatias molorempor assequasit optia quae veribus amendicia comnimaximi, sin eosandam, nonsequodio. Itatem nim doloreris accuscid quos dolo dolessitae.
-          Ut quatures aut a quo maiorrum essimus cipsae coriam et vid undae qui con restis moditatqui im rerionsedis ipsam <em>ape eossimossit</em> ut re comnimus, ipsus, am nuscide storum ipit, quoditia volupta temporro volo offic totatur? Aximus, quam antempos idunti blam hitate pel ma ad quam faccatibus.
-        </p>
+        <h2 className={styles.subtitle}>
+          <span className={styles.subtitleUppercase}>Coming</span>
+          <span className={styles.subtitleLowercase}>soon</span>
+        </h2>
+        <div className={styles.description}>
+          <p className={styles.claim}>
+            <span className={styles.keyword}>move</span> studio ci occupiamo di <span className={styles.keyword}>interior and exhibit design</span> a Milano.
+            Siamo sempre alla ricerca di nuove <span className={styles.keyword}>entusiasmanti</span> esperienze e collaborazioni.<br />
+            Contattateci per qualsiasi informazione o anche solo per dirci ciao
+          </p>
+          <p className={`${styles.contacts} ${styles.keyword}`}>
+            <a id="email" href="mailto:info@movestudio.it?subject=I need infos...">
+              info@movestudio.it
+            </a>
+            <a id="instagram" href="https://instagram.com/movestudio__">
+              instagram
+            </a>
+          </p>
+        </div>
       </main>
     </div>
   )
