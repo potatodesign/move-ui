@@ -12,6 +12,8 @@ jobs:
 
 
     strategy:
+      env:
+      NEXT_PUBLIC_BASE_PATH: /move-ui
       matrix:
         node-version: [14.x]
 
