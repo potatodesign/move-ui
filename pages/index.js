@@ -20,9 +20,10 @@ export default function Home() {
         </h2>
         <div className={styles.description}>
           <p className={styles.claim}>
-            <span className={styles.keyword}>move</span> studio ci occupiamo di <span className={styles.keyword}>interior and exhibit design</span> a Milano.
-            Siamo sempre alla ricerca di nuove <span className={styles.keyword}>entusiasmanti</span> esperienze e collaborazioni.<br />
-            Contattateci per qualsiasi informazione o anche solo per dirci ciao
+            <span className={styles.keyword}>move</span> studio si occupa di <span className={styles.keyword}>interior, architecture ed exhibit design</span>.<br />
+            <br />
+            Nato dalla decennale esperienza nel settore ha oggi a Milano la sua base principale.
+            Scrivici per una prima <span className={styles.keyword}>call conoscitiva</span> gratuita, otterrai un preventivo chiaro e in tempi rapidi. Siamo sempre alla ricerca di nuove <span className={styles.keyword}>entusiasmanti</span> esperienze e collaborazioni.<br />
           </p>
           <p className={`${styles.contacts} ${styles.keyword}`}>
             <a id="email" href="mailto:info@movestudio.it?subject=I need infos...">
