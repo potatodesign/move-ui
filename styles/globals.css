@@ -1,57 +1,69 @@
 @font-face {
-  font-family: "Abel";
-  src: url("/fonts/Abel/Abel-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+  font-family: 'Abel';
+  src: local('Abel'), url('/fonts/Abel/Abel-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf");
-  font-style: normal;
+  font-family: 'Abel Pro';
+  src: local('Abel Pro'), url('/fonts/AbelPro/Abel-Pro-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf");
-  font-style: italic;
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype');
   font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf");
   font-style: italic;
-  font-weight: 400;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf");
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf");
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("/fonts/PlayfairDisplay/PlayfairDisplay-SemiBoldItalic.ttf");
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf') format('truetype');
   font-weight: 600;
-  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display'), url('/fonts/PlayfairDisplay/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
 }
 
 html,
@@ -64,6 +76,8 @@ body {
 }
 
 #__next {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 100vh;
 }
@@ -90,8 +104,6 @@ em, i {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   display: flex;
   flex: 1;
@@ -99,7 +111,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   font-size: 1rem;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 footer .footer-heart {

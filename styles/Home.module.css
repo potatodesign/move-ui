@@ -4,7 +4,7 @@
 
 .main {
   min-height: 80vh;
-  padding: 90px 0;
+  padding: 60px 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,11 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 700;
+}
+
+.titleBold {
+  font-family: 'Abel Pro';
+  font-weight: bold;
 }
 
 .titleThin {
@@ -53,7 +58,7 @@
   font-style: italic;
   margin-top: -62px;
   z-index: 2;
-  text-shadow: -2px -2px #FFFFFF;
+  text-shadow: -1px -1px 1px #FFFFFF;
 }
 
 .description {
@@ -107,14 +112,14 @@
     justify-content: start;
   }
   .subtitle {
-    margin-top: 96px;
+    margin-top: 240px;
   }
   .subtitleUppercase,
   .subtitleLowercase {
-    font-size: 15rem;
+    font-size: 236px;
   }
   .subtitleLowercase {
-    margin-top: -224px;
+    margin-top: -216px;
   }
   .description {
     flex-direction: row;

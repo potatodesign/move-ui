@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Move<span className={styles.titleThin}>studio</span>
+          <span className={styles.titleBold}>Move</span><span className={styles.titleThin}>studio</span>
         </h1>
         <h2 className={styles.subtitle}>
           <span className={styles.subtitleUppercase}>Coming</span>
