@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import styles from 'styles/Work.module.css'
+//import styles from 'styles/Work.module.css'
 
 
 const Work = () => {
