@@ -37,7 +37,7 @@ const Nav = () => {
             </Link>
           </li>
           <li className={styles.navigationItem}>
-            <a target="_blank" className={`${styles.navigationLink} ${styles.navigationExternal}`} href="https://instagram.com/movestudio__?igshid=YmMyMTA2M2Y=">Instagram</a>
+            <a rel="noreferrer" target="_blank" className={`${styles.navigationLink} ${styles.navigationExternal}`} href="https://instagram.com/movestudio__?igshid=YmMyMTA2M2Y=">Instagram</a>
           </li>
         </ul>
       </nav>
