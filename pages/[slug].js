@@ -7,7 +7,7 @@ const Work = () => {
   const router = useRouter()
   const { slug } = router.query
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Move studio works {slug}</title>
         <meta name="description" content={`Move studio work ${slug}}`} />
