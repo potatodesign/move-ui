@@ -22,19 +22,22 @@ const Nav = () => {
             </Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link href="/works">
+            <Link href="#works">
               <a onClick={handleClick} className={styles.navigationLink}>Works</a>
             </Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link href="/services">
+            <Link href="#services">
               <a onClick={handleClick} className={styles.navigationLink}>Services</a>
             </Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link href="/contacts">
+            <Link href="#contacts">
               <a onClick={handleClick} className={styles.navigationLink}>Contacts</a>
             </Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <a target="_blank" className={`${styles.navigationLink} ${styles.navigationExternal}`} href="https://instagram.com/movestudio__?igshid=YmMyMTA2M2Y=">Instagram</a>
           </li>
         </ul>
       </nav>

@@ -12,10 +12,9 @@
   width: 4rem;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 2rem var(--dark-light);
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -28,7 +27,7 @@
   border-radius: 50%;
   position: fixed;
   top: 1.4rem;
-  right: 1.4rem;
+  left: 1.4rem;
   background-color: var(--blue);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
@@ -142,6 +141,10 @@
   color: var(--blue);
   transform: translate(1rem);
 }
+
+.navigationExternal:link, .navigationExternal:visited {
+  font-size: 1.5rem;
+}
 /**
   Breakpoints:
   ------------
@@ -166,9 +169,7 @@
 
 /** lg breakpoint **/
 @media (min-width: 1024px) {
-  .navigation {
-    display: none;
-  }
+
 }
 
 /** xl breakpoint **/
